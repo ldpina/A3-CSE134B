@@ -9,6 +9,14 @@ header {
     flex-direction: column;
 }
 
+
+@media(preferes-color-scheme:dark){
+    body{
+        background-color: #121212;
+        color: white;
+    }
+}
+
 body{
     background-color: rgb(250, 233, 210);
 }
@@ -17,6 +25,7 @@ body{
     width: 50em;
     height: 25em;
 }
+
 #projectArea {
     display: flex; 
     justify-content: space-around; 
