@@ -4,22 +4,44 @@
         <title>Luis Pina Portfolio</title>
         <meta charset="UTF-8">
         <link rel = "stylesheet" href = "styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     </head>
     <body>
         <header>
-            <h1>Luis Pina</h1>
-            <a id= "contactme" href = "contactme.html">Contact me</a>
-        </header>
-        <br>
-        <main>
-            <nav class="navbar">
-                <a href = "https://github.com/ldpina">github</a> |  <a href = "https://www.linkedin.com/in/ldpina/">linkedin</a> 
+            <input type="checkbox" id="toggle">
+            <nav>
+
+                <a id="titleSite" href="index.html">
+                    Luis Pina
+                </a>
+
+                <label class="navbar-toggler" for="toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href = "index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "https://github.com/ldpina">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "https://www.linkedin.com/in/ldpina/">Linkedin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href = "contactme.html">Contact Me</a>
+                    </li>
+                </ul>
             </nav>
+        </header>
+        <main>
             <picture>
                 <img src = "LuispinaLinkedin.png" alt = "Luis Pina" width= "300" height = "300">
             </picture>
-            <hr>
             <h2>Hi I am an aspriring <i>software engineer</i></h2>
     
             <aside>
@@ -37,7 +59,7 @@
             <br>
     
             <hr>
-            <hgroup>
+            <section class="homeContent">
                 <h2>Techinical Expreince/Journey</h2>
                 <p>I have compelted two codepath certificates,
                     one in <strong>Intermediate Web Development</strong> and one in <strong>Intermediate Techinical Interview Prep</strong>.
@@ -46,32 +68,32 @@
                     from my mistaks and now am ready to create projects  
                     without so many <del>divs!</del>
                 </p>
-            </hgroup>
-    
-    
-                <hgroup>
-                    <h2>Projects</h2>
-                    <p>Over the past few years of college these are Projects I have completed.</p>
-                </hgroup>
+            </section>
+
+            <section class="homeContent">
+                <h2>Projects</h2>
+                <p>Over the past few years of college these are Projects I have completed.</p>
+
                 <div id = "projectArea">
                     <section class = "subProjects">
-                        <h3>RoamMates</h3>
-                        <p>test</p>
-                        <picture>
-                            <img class="demoGifs" src="roammates.gif" alt="walkthrough of RoamMates project" loading="lazy">
-                        </picture>
-                        
+                        <a href="https://github.com/ldpina/roammates">
+                            <h3>RoamMates</h3>
+                            <picture>
+                                <img class="demoGifs" src="roammates.gif" alt="walkthrough of RoamMates project" loading="lazy">
+                            </picture>
+                        </a>
+                        <p>In this project I used CRUD</p>
                     </section>
                     
                     <section class = "subProjects">
                         <h3>Recipe Dashboard</h3>
-                        <p>test</p>
                         <picture>
                             <img class="demoGifs" src="recipedashboard.gif" alt="walkthrough of Recipe Dashboard project" loading="lazy">
                         </picture>
+                        <p>In this project I used API calls</p>
                     </section>
-                    
                 </div>
+            </section>
             <br>
     
             <hr>
@@ -89,94 +111,7 @@
                 </address>
     
             <br><br>
-    
-            <!-- <h2>This is the lab section</h2>
-            <search>
-                <form>
-                    <label for="fsrch">Search:</label>
-                    <input id="fsrch" type="search" placeholder="Search bar">
-                    <button type="submit">Go</button>
-                </form>
-            </search>    -->
         </main>
 
-        <!-- <footer>
-    
-            <div>
-    
-                <h3>Types of Lists</h3>
-                    <ul>
-                        <li>unordered item</li>
-                        <li>unordered item</li>
-                        <li>unordered item</li>
-                    </ul>
-        
-                    
-                    <ol>
-                        <li>ordered item</li>
-                        <li>ordered item</li>
-                        <li>ordered item</li>
-                    </ol>
-    
-                <video width="400" controls>
-                    <source src="chimpZoom.mp4" type="video/mp4">
-                    Your browser does not support HTML video.
-                </video>
-                <br>
-                <audio controls>
-                    <source src = "AudioChimps.mp3" type = "audio/mpeg">
-                    Your brower does not support the audio element
-                </audio>
-                <br>
-                <canvas id="canvas" width="100" height="100">
-                    Your browser does not support the HTML canvas tag.
-                </canvas>
-                <script>
-                    var c = document.getElementById("canvas");
-                    var context = c.getContext("2d");
-                    context.moveTo(0, 0);
-                    context.lineTo(100, 100);
-                    context.stroke();
-                </script>
-                <noscript>This element is usally suppose have a yellow line it. RIP turn on JSS</noscript>
-    
-                <svg width="100" height="100">
-                    <circle cx="50" cy="25" r="40" stroke="orange" stroke-width="6" fill="yellow" />
-                </svg>
-            </div>
-    
-            <h3> Here is a descriptive list</h3>
-            <dl>
-                <dt><ins>Pizza</ins></dt>
-                <dd>contains dairy</dd>
-                <dt><ins>Spagetti With Meatballs</ins></dt>
-                <dd>contains gluten</dd>
-            </dl>
-    
-            <h3>Favorite Keyboard Command <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd></h3>
-    
-            <template>
-                <h2>Demo of a template</h2>
-                <p>fun!</p>
-            </template>
-
-            <cool-demo>
-                custom semantic css!
-            </cool-demo>
-
-            <hello-custom></hello-custom>
-
-            <script>
-                class Hello extends HTMLElement {
-                    constructor() {
-                        super();
-                        console.log("Hello to whom it may concern!");
-                    }
-                }
-                customElements.define("hello-custom", Hello);
-            </script>
-    
-    
-        </footer> -->
     </body>
 </html>
