@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <title>Luis Pina Portfolio</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "styles.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>Luis Pina</h1>
+            <button ><a href = "index.html">Return Home</a></button> 
+        </header>
+        <br>
+        <main>
+            <nav class="navbar">
+                <a href = "https://github.com/ldpina">github</a> |  <a href = "https://www.linkedin.com/in/ldpina/">linkedin</a>
+            </nav>
+            <form>
+                <fieldset>
+                    <legend>Contact Me:</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+    
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br>
+    
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" value=""><br>
+    
+                    <label for="project">What project caught your eye:</label><br>
+                    <input list="projects" id="project">
+                    <datalist id="projects">
+                        <option value="FitPal">
+                        <option value="RoamMates">
+                        <option value="all of them">
+                    </datalist><br>
+    
+                    <label for="language">What language would you like to communicate in:</label><br>
+                    <select  id="language">
+                        <optgroup label="Languages">
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                        </optgroup>
+                    </select><br>
+    
+                    <label for="inquiryInfo">Reason for Contact:</label><br>
+                    <textarea id="inquiryInfo" name="inquiryInfo" rows="4" cols="30" placeholder="type here..."></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+            <br>
+    
+            <hr>
+    
+            <address>
+                Written by Luis Pina.
+                <br> 
+                Visit my storefront:
+                <br>
+                luispina.com
+                <br>
+                2023 Commerce Rd, Los Angeles
+                <br>
+                USA
+                </address>
+    
+            <br><br>
+        </main>
+    </body>
+</html>
