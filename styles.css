@@ -9,6 +9,19 @@ header {
     flex-direction: column;
 }
 
+#contactme{
+    text-decoration: none;
+    background-color: rgb(56, 155, 201);
+    color:rgb(231, 234, 236);
+    padding: 0.5em;
+}
+#returnHome{
+    text-decoration: none;
+    background-color: rgb(56, 155, 201);
+    color:rgb(231, 234, 236);
+    padding: 0.5em;
+}
+
 
 @media(preferes-color-scheme:dark){
     body{
