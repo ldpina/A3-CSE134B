@@ -18,7 +18,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20rem;
+    padding: 0 18rem;
     height: 75px;
     line-height: 75px;
     background-color: #404040;
@@ -30,7 +30,7 @@ nav {
 
 #titleSite {
     color: #ffffff;
-    font-size: 28px;
+    font-size: 2.5vh;
     font-weight: 500;
     letter-spacing: .5px;
 }
@@ -55,9 +55,19 @@ nav {
     font-weight: 500;
 }
 
-@media (max-width: 935px) {
+/* @media (max-width: 1200px) {
     nav {
         padding: 0 2rem;
+    }
+
+    nav .nav-list .nav-item {
+        padding: 0 40px;
+    }
+} */
+
+@media (max-width: 935px) {
+    nav {
+        padding: 0 1rem;
     }
 
     nav .nav-list .nav-item {
@@ -65,7 +75,7 @@ nav {
     }
 }
 
-@media (max-width: 675px) {
+@media (max-width: 1200px) {
     .navbar-toggler {
         display: flex;
         flex-direction: column;
@@ -116,7 +126,7 @@ nav {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #121212;
+        background-color: black;
         color: white;
     }
 }
