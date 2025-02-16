@@ -91,7 +91,6 @@ nav {
         right: 20px;
         top: 22px;
         cursor: pointer;
-        z-index: 20;
     }
 
     .navbar-toggler .bar {
