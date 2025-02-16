@@ -139,6 +139,13 @@ nav {
         background-color: var(--dark-bg, black)!important;
         color: var(--text-color-dark, white) !important;
     }
+
+    fieldset{
+        padding: 2%;
+        margin: 0 30%;
+        background-color: rgb(133, 98, 55);
+        border-radius: 3%;
+    }
 }
 
 @keyframes fadeIn {
